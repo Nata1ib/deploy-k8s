@@ -9,14 +9,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: w-boot
+      app: boot
   template:
     metadata:
       labels:
-        app: w-boot
+        app: boot
     spec:
       containers:
-        - name: w-boot
-          image: naya1ib/boot:latest
+        - name: boot
+          image: nataboytsova/boot:bot
           ports:
-            - containerPort: 5000
+            - containerPort: 7000
