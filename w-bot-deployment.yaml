@@ -13,7 +13,7 @@ spec:
   template:
     metadata:
       labels:
-        app: w-booy
+        app: w-boot
     spec:
       containers:
         - name: w-boot
