@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: w-boot
-          image: /w-boot
+          image: nata1ib/w-boot:latest
           ports:
             - containerPort: 5000
