@@ -1,0 +1,16 @@
+- name: Check k8s host
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Wait for k8s port 22
+      wait_for:
+        host: "192.168.199.216"
+        port: 22
+- name: Create K8S resource
+  hosts: localhost
+  tasks:
+    - name: Get K8S namespace
+      kubernetes.core.k8s:
+        apply: true
+        namespace: "boytsova-na"
+        template: ./w-bot-deployment.yaml
