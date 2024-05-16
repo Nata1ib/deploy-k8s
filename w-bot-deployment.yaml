@@ -4,19 +4,19 @@ metadata:
   name: w-bot-deployment
   namespace: boytsova-na
   labels:
-    app: w-bot-bn
+    app: w-boot
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: w-bot-bn
+      app: w-boot
   template:
     metadata:
       labels:
-        app: w-bot-bn
+        app: w-booy
     spec:
       containers:
-        - name: w-bot_bn
-          image: /w-bot_nb:latest
+        - name: w-boot
+          image: /w-boot:latest
           ports:
             - containerPort: 5000
