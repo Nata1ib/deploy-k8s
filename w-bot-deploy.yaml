@@ -19,4 +19,4 @@ spec:
         - name: bot
           image: nataboytsova/bot:latest
           ports:
-            - containerPort: 7000
+            - containerPort: 5000
