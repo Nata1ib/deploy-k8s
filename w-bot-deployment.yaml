@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: w-boot
-          image: /w-boot:latest
+          image: /w-boot
           ports:
             - containerPort: 5000
